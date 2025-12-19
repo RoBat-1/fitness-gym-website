@@ -26,6 +26,8 @@ function Header() {
           <button onClick={() => scrollToSection('classes')}>Classes</button>
           <button onClick={() => scrollToSection('trainers')}>Trainers</button>
           <button onClick={() => scrollToSection('pricing')}>Pricing</button>
+          <button onClick={() => scrollToSection('bmi')}>BMI Calculator</button>
+          <button onClick={() => scrollToSection('blog')}>Blog</button>
           <button onClick={() => scrollToSection('contact')}>Contact</button>
         </nav>
 
