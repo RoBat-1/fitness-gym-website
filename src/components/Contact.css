@@ -34,18 +34,22 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 5px;
+  padding: 1.2rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+  background: rgba(248, 249, 250, 0.8);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #ff6b35;
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  background: white;
+  transform: translateY(-2px);
 }
 
 .contact-form textarea {
