@@ -1,0 +1,80 @@
+.classes {
+  padding: 6rem 2rem;
+  background: #f8f9fa;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.class-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+}
+
+.class-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.class-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.intensity {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.intensity-low {
+  background: #d4edda;
+  color: #155724;
+}
+
+.intensity-medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.intensity-high {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.class-info {
+  margin-bottom: 1.5rem;
+}
+
+.class-info p {
+  color: #666;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.class-card .btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+}

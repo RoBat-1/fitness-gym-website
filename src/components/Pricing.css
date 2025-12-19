@@ -1,0 +1,103 @@
+.pricing {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.pricing .section-title {
+  color: white;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.popular {
+  border: 3px solid #ff6b35;
+  transform: scale(1.05);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff6b35;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.pricing-card h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.price {
+  margin-bottom: 2rem;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+.period {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 0.8rem 0;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popular {
+    transform: scale(1);
+  }
+}
